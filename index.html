@@ -3,50 +3,53 @@
 
 <head>
     <meta charset='utf-8'>
-    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
-    <title>Omni Project</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type='text/css' href='resources/css/queries.css'>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100;1,300&display=swap"
-        rel="stylesheet">
+     <title>Omni Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='stylesheet' type='text/css' media='screen' href='vendors/css/ionicons.min.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='vendors/css/normalize.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='vendors/css/7.1 Grid.css'>
+    
     <link rel='stylesheet' type='text/css' media='screen' href='resources/css/style.css'>
-    <link href="#">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100;1,300&display=swap"
+    rel="stylesheet">
+
+
 </head>
 
 <body>
     <header>
         <nav>
             <div class="row">
-                <img class="logo" src="resources/img/logo-white.png" alt="omnifoodlogo">
-                <ul class="main-nav">
-                    <li><a href="#"> Food delivery</a></li>
-                    <li><a href="#"> How it works</a></li>
-                    <li><a href="#"> Our cities</a></li>
-                    <li><a href="#"> Sign uP</a></li>
+                <img class="logo" src="resources/img/logo-white.png" alt="omnifoodlogo" />
+                <img class="logo-black" src="resources/img/logo.png" alt="omnifoodlogo" />
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#features"> Food delivery</a></li>
+                    <li><a href="#works"> How it works</a></li>
+                    <li><a href="#cities"> Our cities</a></li>
+                    <li><a href="#plans"> Sign uP</a></li>
 
 
                 </ul>
+                <a  class="mobile-nav-icon js--nav-icon "><i class="ion-navicon-round"></i>  </a>
             </div>
         </nav>
 
         <div class="hero-text-box">
             <h1>Goodbye junk food.<br /> Hello super healthy meals.</h1>
-            <a href="#" class="btn btn-full">I'm hungry</a>
-            <a href="#" class="btn btn-ghost">show me more</a>
+            <a href="#" class="btn btn-full js--scroll-to-plans">I'm hungry</a>
+            <a href="#" class="btn btn-ghost js--scroll-to-features">show me more</a>
         </div>
     </header>
 
-    <section class="section-features">
+    <section class="section-features js--section-features" id="features">
         <div class="row">
             <h2>GET FOOD FAST &mdash; NOT FAST FOOD</h2>
             <p class="long-copy">Hello, we're Omnifood. your new premium food delivery service. We know you're always
                 busy. No time for
                 cooking. So let us take care of that, we're really good at it, we promise!</p>
         </div>
-        <div class="row">
+        <div class="row js--wp-1">
 
             <div class="col span-1-of-4   box">
                 <i class="ion-heart icon-big "></i>
@@ -122,13 +125,13 @@
         </ul>
 
     </section>
-    <section class="section-steps">
+    <section class="section-steps" id="works">
         <div class="row">
             <h2>How it work &mdash; Simple as 1, 2, 3</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-2 steps-box">
-                <img src="resources/img/app-iPhone.png" alt="iphone-img" class="app-screen">
+                <img src="resources/img/app-iPhone.png" alt="iphone-img" class="app-screen animate__bounceInUp">
             </div>
 
             <div class="col span-1-of-2 steps-box">
@@ -153,12 +156,12 @@
 
         </div>
     </section>
-    <section class="section-cities">
+    <section class="section-cities" id="cities">
         <div class="row">
             <h2>we're currenly in these cities</h2>
         </div>
 
-        <div class="row">
+        <div class="row js--wp-3">
             <div class="col span-1-of-4 box">
                 <img src="resources/img/lisbon-3.jpg" alt="city-1">
                 <h3>LISBON</h3>
@@ -260,11 +263,11 @@
         </div>
     </section>
     <!-- *********************************************************************************************************************************** -->
-    <section class="section-plans">
+    <section class="section-plans js--section-plans" id="plans">
         <div class="row">
             <h2>Sign up and pricing plans</h2>
         </div>
-        <div class="row">
+        <div class="row js--wp-4">
             <!-- col 1 -->
             <div class="col span-1-of-3">
                 <div class="plan-box">
@@ -384,8 +387,8 @@
                     <div class="col span-1-of-3">
                         <label for="msg">Drop us a line</label>
                     </div>
-                    <div class="col span-2-of-3">
-                        <textarea name="message" placeholder="Your message" id="msg" cols="21 rows=" 7"></textarea>
+                    <div class="col span-2-of-3 'textarea-fix'" >
+                        <textarea   name="message" placeholder="Your message" id="msg" ></textarea>
                     </div>
                 </div>
                 <div class="row">
@@ -427,5 +430,9 @@
         </div>
     </footer>
 </body>
+
+<script src="vendors/js/jquery-3.5.1.min.js"></script>
+<script src="vendors/js/jquery.waypoints.min.js"></script>
+<script src="resources/js/script.js"></script>
 
 </html>
